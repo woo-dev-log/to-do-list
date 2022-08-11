@@ -6,7 +6,7 @@ type Props = {
 }
 
 const TodoBox = ({ children }: Props) => {
-    return <div className='TodoBox'>{children}</div>
+    return <div className='todo-box'>{children}</div>
 }
 
 export default TodoBox;

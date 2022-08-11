@@ -1,29 +1,32 @@
 import React, { useState } from "react";
+import { MdAdd } from "react-icons/md";
 import { useRecoilState } from "recoil";
 import { todoList, TodoType } from "./atoms";
+import './TodoInput.scss';
 
 const TodoInput = () => {
-    const [test, setTest] = useState('');
+    const [text, setText] = useState('');
     const [todos, setTodos] = useRecoilState(todoList);
 
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value);
+
     const todoAdd = () => {
-        const nextId: number = todos.length > 0 ? todos[todos.length - 1].id + 1 : 0;
+        if (!text) return;
 
         const todo: TodoType = {
-            id: nextId,
-            contents: test
+            id: todos.length > 0 ? todos[todos.length - 1].id + 1 : 1,
+            contents: text
         };
 
         setTodos([...todos, todo]);
+        setText('');
     };
 
-    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => setTest(e.target.value);
-
     return (
-        <>
-            <input type="text" className="TodoInput" onChange={onChange} placeholder="일정을 입력하세요" />
-            <button onClick={todoAdd}>입력</button>
-        </>
+        <div className="todo-input-container">
+            <input type="text" value={text} className="todo-input" onChange={onChange} placeholder="일정을 입력하세요" />
+            <MdAdd className="todo-add" onClick={todoAdd} />
+        </div>
     )
 }
 

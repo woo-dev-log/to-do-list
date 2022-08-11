@@ -1,9 +1,10 @@
-.TodoBox {
-    width: 512px;
-    height: 512px;
+.todo-box {
+    width: 400px;
+    height: 500px;
     background-color: white;
-    margin: 0 auto;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

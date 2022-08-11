@@ -1,0 +1,21 @@
+.todo-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-input {
+    width: 80%;
+    height: 40px;
+    font-size: 1.1rem;
+}
+
+.todo-add {
+    cursor: pointer;
+    font-size: 2.1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 10px;
+}

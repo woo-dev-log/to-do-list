@@ -11,17 +11,17 @@ export const todoList = atom<TodoType[]>({
     default: [
         {
             id: 1,
-            contents: 'Todo List를',
+            contents: '깃허브 잔디 심기',
         },
 
         {
             id: 2,
-            contents: '자유롭게',
+            contents: '우영우 챙겨보기',
         },
 
         {
             id: 3,
-            contents: '추가해보세요!',
+            contents: '취업 하기!',
         }
     ],
 });

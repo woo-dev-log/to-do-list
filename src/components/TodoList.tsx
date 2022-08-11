@@ -1,18 +1,17 @@
-import React from 'react';
-import { useRecoilState } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { todoList } from './atoms';
+import TodoRemove from './TodoRemove';
 import './TodoList.scss';
 
 const TodoList = () => {
-    const [todos, setTodos] = useRecoilState(todoList);
-
-    const remove = (id: number) => setTodos(todos.filter(v => v.id !== id));
+    const todos = useRecoilValue(todoList);
 
     return (
-        <div className="TodoList">
+        <div className='todo-list-container'>
             {todos.map((v) =>
-                <div key={v.id}>
-                    <button onClick={() => remove(v.id)}>삭제</button>
+                <div key={v.id} className="todo-list">
+                    {v.contents}
+                    <TodoRemove id={v.id} />
                 </div>
             )}
         </div>
