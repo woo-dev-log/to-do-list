@@ -1,4 +1,4 @@
-## to-do-list
+### 투두리스트
 https://woo-dev-log.github.io/to-do-list/
 ### 사용 스킬
 [![Typescript Badge](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white)](https://www.typescriptlang.org/)
