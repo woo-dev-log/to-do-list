@@ -4,10 +4,26 @@
     justify-content: space-between;
 }
 
+.todo-list-head {
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.todo-list-date {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.todo-list-length {
+    font-size: 1.2rem;
+    color: cadetblue;
+}
+
 .todo-input {
     width: 80%;
     height: 40px;
-    font-size: 1.1rem;
+    font-size: 1.2em;
 }
 
 .todo-add {
