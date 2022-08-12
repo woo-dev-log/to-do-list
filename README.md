@@ -1,7 +1,6 @@
 ## to-do-list
-Typescript + Scss + Recoil로 개발한 투두리스트입니다
-
 https://woo-dev-log.github.io/to-do-list/
+Typescript + Scss + Recoil로 개발한 투두리스트입니다
 
 ### 사용 스킬
 [![Typescript Badge](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white)](https://www.typescriptlang.org/)
