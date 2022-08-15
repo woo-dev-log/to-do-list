@@ -9,4 +9,4 @@ https://woo-dev-log.github.io/to-do-list/
 Typescript + Scss + Recoil로 개발한 투두리스트입니다
 
 ### 이미지
-![image](https://user-images.githubusercontent.com/110772642/184629778-a36448cf-8263-4869-a883-3cff460cc47d.png)
+![image](https://user-images.githubusercontent.com/110772642/184629903-6547798a-eb93-4ae4-abc8-6ed6b52b3257.png)
